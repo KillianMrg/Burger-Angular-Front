@@ -1,0 +1,13 @@
+.details {
+  background-color: indianred;
+  text-align:center;
+}
+
+.back {
+  background-color: green;
+}
+
+.details-img {
+  max-width: 600px;
+
+}

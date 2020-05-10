@@ -1,3 +1,8 @@
 .burger-list {
   max-width: 500px;
+  background-color: darkcyan;
+}
+
+.details {
+  background-color:cadetblue;
 }

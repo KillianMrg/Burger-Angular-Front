@@ -5,15 +5,15 @@
 
 
   <div *ngFor="let burger of burgerList">
-    <mat-card class="bruger-list">
+    <mat-card class="burger-list">
       <mat-card-title>{{burger.name}}</mat-card-title>
       <mat-card-subtitle>Burger {{burger.id}}</mat-card-subtitle>
       <mat-card-content>
-        <img src="{{burger.image}}">
+        <img mat-card-image src="{{burger.image}}">
         <p>Prix : {{burger.price}} </p>
       </mat-card-content>
       <mat-card-actions>
-        <button mat-button><a href="burger/{{burger.id}}">Voir les détails</a></button mat-button>
+        <button mat-button routerLink="burger/{{burger.id}}" class="details">Voir les détails</button>
       </mat-card-actions>
     </mat-card>
   </div>
