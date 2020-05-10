@@ -9,6 +9,7 @@ import { BurgerListComponent } from './burger-list/burger-list.component';
 import { BurgerDetailsComponent } from './burger-details/burger-details.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card'
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { MatCardModule } from '@angular/material/card'
     HttpClientModule,
     NoopAnimationsModule,
 
-    MatCardModule
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

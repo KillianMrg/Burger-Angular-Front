@@ -5,7 +5,7 @@
 
 
   <div *ngFor="let burger of burgerList">
-    <mat-card>
+    <mat-card class="bruger-list">
       <mat-card-title>{{burger.name}}</mat-card-title>
       <mat-card-subtitle>Burger {{burger.id}}</mat-card-subtitle>
       <mat-card-content>
@@ -13,7 +13,7 @@
         <p>Prix : {{burger.price}} </p>
       </mat-card-content>
       <mat-card-actions>
-        <a href="burger/{{burger.id}}">Voir les détails</a>
+        <mat-button><a href="burger/{{burger.id}}">Voir les détails</a></mat-button>
       </mat-card-actions>
     </mat-card>
   </div>
